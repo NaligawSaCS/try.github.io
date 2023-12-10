@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-grid .player .container {
+    height: 430px;
+    width: 310px;
+    background: #ffffff;
+    border-radius: 35px;
+    box-shadow: 1px 2px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.photo-grid .player .container .track-art {
+    margin: 25px;
+    width: 250px;
+    height: 220px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    -moz-box-shadow: 0px 6px 5px black;
+    -webkit-box-shadow: 0px 6px 5px black;
+    box-shadow: 0px 6px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo-grid .player .container span {
+    color: #000000;
+    font-size: 14px;
+    position: absolute;
+    left: 30px;
+    top: 200px;
+}
+
+.photo-grid .player .container .now-playing {
+    font-size: 1rem;
+    }
+
+.photo-grid .player .container .track-name {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 5px;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo-grid .player .container .track-artist {
+    margin-top: -40px;
+    color: #000000;
+    font-weight: 700;
+    position: absolute;
+    left: 25px;
+    top: 250px;
+    display: flex;
+    justify-content: center;
+}
+.photo-grid .player .Btn {
+    display: flex;
+    flex-direction: row;
+    color: #000000;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.active {
+    color: #000;
+}
+.photo-grid .player .Btn .repeat-track, .random-track, .playpause-track, .prev-track, .next-track {
+    padding: 15px;
+    opacity: 0.8;
+    transition: opacity .2s;
+}
+.photo-grid .player .Btn .repeat-track:hover, .random-track:hover, .playpause-track:hover, .prev-track:hover, .next-track:hover {
+    opacity: 1.0;
+}
+.photo-grid .player .slider_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-grid .player .slider_container .seek_slider, .volume_slider {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 5px;
+    background: #000000;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+.photo-grid .player .slider_container .seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    cursor: grab;
+    border: 2px solid #3774ff;
+    border-radius: 100%;
+}
+.photo-grid .player .slider_container .seek_slider:hover, .volume_slider:hover {
+    opacity: 1.0;
+}
+.photo-grid .player .slider_container .current-time {
+    color: #000000;
+    padding: 10px;
+}
+.photo-grid .player .slider_container .total-duration {
+    color: #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+i.fa-volume-down, i.fa-volume-up {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.photo-grid .player .slider_container i {
+    color: #000000;
+}
+.photo-grid .player .slider_container .seek_slider {
+    width: 100%;
+}
+.photo-grid .player .slider_container .volume_slider {
+    width: 40%;
+}
+i.fa-play-circle, i.fa-step-forward, i.fa-step-backward, p {
+    cursor: pointer;
+}
+.randomActive {
+    color: black;
+}
